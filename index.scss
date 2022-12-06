@@ -1,0 +1,30 @@
+
+html,body{
+    margin: 0px;
+}
+
+@media screen and (max-width: 400px) {
+    html{
+        background-color: white;
+    }
+    #header-nav{
+        #banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            h1{
+                position: absolute;
+                font-size: 50px;
+                z-index: 5;
+                color: white;
+            }
+            img{
+                object-fit: cover;
+                position: relative;
+                width:100%;
+                height: 100%;
+            }
+        }
+    }
+}
