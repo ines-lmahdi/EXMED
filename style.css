@@ -1,30 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,100&display=swap");
-html, body {
+body {
   margin: 0px;
+  background-color: #87acbc;
 }
 
-@media screen and (max-width: 400px) {
-  html {
-    background-color: white;
-  }
-  #header-nav #banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #header-nav #banner h1 {
-    position: absolute;
-    font-size: 50px;
-    z-index: 5;
-    color: white;
-  }
-  #header-nav #banner img {
-    object-fit: cover;
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
+#banner img {
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
 }
+#banner .fa-bars {
+  position: absolute;
+  color: white;
+  left: 95%;
+  top: 10px;
+  z-index: 2;
+}
+#banner .fa-arrow-left {
+  position: absolute;
+  color: white;
+  left: 10px;
+  top: 10px;
+  z-index: 2;
+}
+#banner h1 {
+  color: white;
+  position: absolute;
+  font-size: 50px;
+  z-index: 3;
+  top: 50px;
+  text-align: center;
+}
+
+#presentation, #parcours {
+  margin: 10px;
+  border-radius: 20px 20px 0px 0px;
+}
+#presentation h2, #parcours h2 {
+  color: rgb(24, 52, 68);
+}
+#presentation .etape, #parcours .etape {
+  background-color: #e8ecf0;
+  border-radius: 30px;
+  width: 80%;
+  padding: 8px;
+  margin: 25px;
+  box-shadow: 10px 10px 10px #3b291b;
+}
+#presentation .etape p, #parcours .etape p {
+  text-align: justify;
+}
+#presentation .etape h3, #parcours .etape h3 {
+  color: rgb(24, 52, 68);
+}
+#presentation .position-right, #parcours .position-right {
+  margin-left: 28%;
+}
+
+footer {
+  background-color: rgb(24, 52, 68);
+}
+
+.formulaire h2 {
+  text-align: center;
+}
+.formulaire #formulaire {
+  width: 50%;
+  margin: auto;
+}
+.formulaire #formulaire input, .formulaire #formulaire textarea {
+  width: 90%;
+  margin: 10px 0px 10px 0px;
+}
+
 html {
   font-family: "Roboto", sans-serif;
 }

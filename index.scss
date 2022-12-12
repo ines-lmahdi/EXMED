@@ -1,30 +1,70 @@
 
-html,body{
+body{
     margin: 0px;
+    background-color:#87acbc;
 }
 
-@media screen and (max-width: 400px) {
-    html{
-        background-color: white;
+#banner{
+    img{
+        object-fit: cover;
+        height: 500px;
+        width: 100%;
     }
-    #header-nav{
-        #banner{
-            display: flex;
-            justify-content: center;
-            align-items: center;
 
-            h1{
-                position: absolute;
-                font-size: 50px;
-                z-index: 5;
-                color: white;
-            }
-            img{
-                object-fit: cover;
-                position: relative;
-                width:100%;
-                height: 100%;
-            }
+    .fa-bars{
+        position: absolute;
+        color: white;
+        left: 95%;
+        top: 10px;
+        z-index: 2;
+    }
+    .fa-arrow-left{
+        position: absolute;
+        color: white;
+        left: 10px;
+        top: 10px;
+        z-index: 2;
+    }
+
+    h1{
+        color: white;
+        position: absolute;
+        font-size: 50px;
+        z-index: 3;
+        top: 50px;
+        text-align: center;
+    }
+}
+
+#presentation, #parcours{
+    margin: 10px;
+    border-radius: 20px 20px 0px 0px;
+
+    h2{
+        color:  rgba(24,52,68,1);
+    }
+
+    .etape{
+        background-color: #e8ecf0;
+        border-radius: 30px;
+        width: 80%;
+        padding: 8px;
+        margin: 25px;
+        box-shadow: 10px 10px 10px #3b291b;
+        p{
+            text-align: justify;
+        }
+
+        h3{
+            color:rgba(24,52,68,1);
         }
     }
+    .position-right{
+        margin-left: 28%;
+    }
 }
+
+footer{
+    background-color: rgba(24,52,68,1);
+}
+
