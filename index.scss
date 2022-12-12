@@ -4,50 +4,48 @@ body{
     background-color:#87acbc;
 }
 
+h1{
+    color: white;
+    font-size: 50px;
+    z-index: 3;
+    top: 50px;
+    text-align: center;
+}
+
 #banner{
-    img{
-        object-fit: cover;
-        height: 500px;
-        width: 100%;
-    }
+    background-image: url('/image/11869.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-attachment:fixed;
+    height: 400px;
 
     .fa-bars{
-        position: absolute;
         color: white;
         left: 95%;
         top: 10px;
         z-index: 2;
     }
     .fa-arrow-left{
-        position: absolute;
         color: white;
         left: 10px;
         top: 10px;
         z-index: 2;
     }
-
-    h1{
-        color: white;
-        position: absolute;
-        font-size: 50px;
-        z-index: 3;
-        top: 50px;
-        text-align: center;
-    }
 }
 
 #presentation, #parcours{
-    margin: 10px;
-    border-radius: 20px 20px 0px 0px;
+    //background-color: #87acbc6b;
 
     h2{
         color:  rgba(24,52,68,1);
+        margin: none;
     }
 
     .etape{
         background-color: #e8ecf0;
-        border-radius: 30px;
-        width: 80%;
+        border-radius: 10px;
+        //width: 80%;
         padding: 8px;
         margin: 25px;
         box-shadow: 10px 10px 10px #3b291b;
@@ -58,9 +56,6 @@ body{
         h3{
             color:rgba(24,52,68,1);
         }
-    }
-    .position-right{
-        margin-left: 28%;
     }
 }
 
