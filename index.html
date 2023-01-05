@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/image/logo EXMES.png" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7a4c34e63c.js" crossorigin="anonymous"></script>
@@ -12,15 +13,19 @@
 </head>
 <body>
     <header>
-        <div id="banner">
-            <a href="contact.html"><i class="fa-solid fa-bars"></i></a>
+        <nav>
+            <img src="/image/logo EXMES.png" alt="logo" id="logo-exmes">
             <h1> EXMES</h1>
+            <a href="contact.html"><i class="fa-solid fa-envelope"></i></a>
+        </nav>
+        <div id="banner">
+            <img src="/image/11869.jpg" alt="">
         </div>
     </header>
     <main>
         <section id="presentation">
             <h2>Bienvenue chez EXMES</h2>
-            <p class="introduction">
+            <p id="introduction">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
@@ -32,65 +37,75 @@
         </section>
         <section id="parcours">
             <h2>Parcours</h2>
-            <article class="etape 1">
-                <h3> Etape 1: Examen biologiques</h3>
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                </p>
-            </article>
-            <article class="etape 2 position-right">
-                <h3> Etape 2: Ophtalmologie</h3>
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                </p>
-            </article>
-            <article class="etape 3">
-                <h3> Etape 3: Cardiologue</h3>
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                </p>
-            </article>
-            <article class="etape 4 position-right">
-                <h3> Etape 4: ORL</h3>
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                </p>
-            </article>
-            <article class="etape 5">
-                <h3> Etape 5: Test psychotechnique</h3>
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                </p>
-            </article>
-            <article class="etape 6 position-right">
-                <h3> Etape 6: Médecin généraliste</h3>
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                </p>
-            </article>
+            <section id="etapes">
+                <article class="etape 1">
+                    <img src="/image/rendez-vous.jpg" alt="photo rendez-vous">
+                    <h3> Rendez vous avec votre avenir</h3>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    </p>
+                </article>
+                <article class="etape 2 position-right">
+                    <img src="/image/medecin.jpg" alt="photo medecin">
+                    <h3> Rendez-vous avec nos spécialistes</h3>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    </p>
+                </article>
+                <article class="etape 3">
+                    <img src="/image/conducteur-train.jpg" alt="conducteur de train">
+                    <h3> Resultats des tests</h3>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    </p>
+                </article>
+                <!--<article class="etape 4 position-right">
+                    <h3> Etape 4: ORL</h3>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    </p>
+                </article>
+                <article class="etape 5">
+                    <h3> Etape 5: Test psychotechnique</h3>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    </p>
+                </article>
+                <article class="etape 6 position-right">
+                    <h3> Etape 6: Médecin généraliste</h3>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    </p>
+                </article>-->
+            </section>
         </section>
 
     </main>
-    <footer>
-        <div>
+    <footer id="footer">
+        <div class="mentions">
+            <a href="mentions-legales.html">Mentions légales</a>
+            <a href="contact.html">Demande de devis</a>
+            <a href="mailto:blablabla@gmail.com"> blablabla@gmail.com</a>
+        </div>
+        <div class="address">
             <p>1 boulevard du Générale de Gaulle <br>
                 Paris 75000 <br>
                 Téléphone: 01 45 46 47 48</p>

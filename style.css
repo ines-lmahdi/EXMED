@@ -1,77 +1,153 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,100&display=swap");
-body {
+html, body {
   margin: 0px;
-  background-color: #87acbc;
+  font-family: "Roboto";
 }
-
-h1 {
-  color: white;
-  font-size: 50px;
-  z-index: 3;
-  top: 50px;
+html h1, body h1 {
+  font-size: 40px;
+  margin: 0px;
+  color: #035f81;
+  font-family: "Roboto-Thin";
   text-align: center;
 }
-
-#banner {
-  background-image: url("/image/11869.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
+html nav, body nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+}
+html nav .fa-envelope, body nav .fa-envelope {
+  color: #035f81;
+  font-size: 25px;
+}
+html nav #logo-exmes, body nav #logo-exmes {
+  width: 75px;
+  height: 75px;
+}
+html #banner, body #banner {
+  height: 450px;
+  width: 100%;
+}
+html #banner img, body #banner img {
   object-fit: cover;
-  background-attachment: fixed;
-  height: 400px;
+  height: 100%;
+  width: 100%;
 }
-#banner .fa-bars {
-  color: white;
-  left: 95%;
-  top: 10px;
-  z-index: 2;
+html #presentation h2, body #presentation h2 {
+  font-family: "Roboto-Thin";
+  font-size: 35px;
+  color: #035f81;
+  text-align: center;
 }
-#banner .fa-arrow-left {
-  color: white;
-  left: 10px;
-  top: 10px;
-  z-index: 2;
-}
-
-#presentation h2, #parcours h2 {
-  color: rgb(24, 52, 68);
-  margin: none;
-}
-#presentation .etape, #parcours .etape {
-  background-color: #e8ecf0;
-  border-radius: 10px;
-  padding: 8px;
-  margin: 25px;
-  box-shadow: 10px 10px 10px #3b291b;
-}
-#presentation .etape p, #parcours .etape p {
+html #presentation #introduction, body #presentation #introduction {
+  padding: 2%;
   text-align: justify;
 }
-#presentation .etape h3, #parcours .etape h3 {
-  color: rgb(24, 52, 68);
+html #parcours h2, body #parcours h2 {
+  color: #035f81;
+  font-size: 30px;
+  padding-left: 20px;
+  font-family: "Roboto-Thin";
 }
-
-footer {
-  background-color: rgb(24, 52, 68);
+html #etapes, body #etapes {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
-
-.formulaire h2 {
+html #etapes h3, body #etapes h3 {
+  color: black;
+}
+html #etapes .etape, body #etapes .etape {
+  width: 30%;
+  height: 100%;
+  padding: 5px;
+}
+html #etapes .etape img, body #etapes .etape img {
+  width: 100%;
+  height: 200px;
+}
+html #etapes .etape p, body #etapes .etape p {
+  text-align: justify;
+}
+html #footer, body #footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #035f81;
+  color: white;
+  padding: 7px;
+}
+html #footer .mentions, body #footer .mentions {
+  display: flex;
+  justify-content: space-around;
+}
+html #footer .address, body #footer .address {
   text-align: center;
 }
-.formulaire #formulaire {
+html #footer a, body #footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+html, body, main {
+  margin: 0px;
+  height: 100%;
+  font-family: "Roboto";
+}
+html #header-contact h1, body #header-contact h1, main #header-contact h1 {
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+}
+html #header-contact .fa-arrow-left, body #header-contact .fa-arrow-left, main #header-contact .fa-arrow-left {
+  color: #035f81;
+  font-size: 25px;
+  padding: 10px;
+  position: fixed;
+}
+html #formulaire, body #formulaire, main #formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html #formulaire #contact-banner, body #formulaire #contact-banner, main #formulaire #contact-banner {
+  background-color: rgba(3, 95, 129, 0.4980392157);
+  height: 200px;
+  text-align: center;
+  font-size: 20px;
+}
+html #formulaire h2, body #formulaire h2, main #formulaire h2 {
+  color: #035f81;
+  font-family: "Roboto-Thin";
+  font-size: 30px;
+}
+html #formulaire h2, body #formulaire h2, main #formulaire h2 {
+  text-align: center;
+}
+html #formulaire .formulaire, body #formulaire .formulaire, main #formulaire .formulaire {
   width: 50%;
-  margin: auto;
-  background-color: #436976;
+  margin: 30px auto 0px auto;
+  background-color: #035f81;
   border-radius: 20px;
   padding: 20px;
+  color: white;
 }
-.formulaire #formulaire input, .formulaire #formulaire textarea {
+html #formulaire .formulaire input, html #formulaire .formulaire textarea, body #formulaire .formulaire input, body #formulaire .formulaire textarea, main #formulaire .formulaire input, main #formulaire .formulaire textarea {
   width: 90%;
   margin: 10px 0px 10px 0px;
 }
 
 html {
   font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/font/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url(/font/Roboto-Thin.ttf);
 }
 
 /*# sourceMappingURL=style.css.map */

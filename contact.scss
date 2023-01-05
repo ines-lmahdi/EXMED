@@ -1,18 +1,53 @@
-.formulaire{
-    h2{
-        text-align: center;
-    }
-    #formulaire{
-        width: 50%;
-        margin: auto;
-        background-color:#436976;
-        border-radius: 20px;
-        padding: 20px;
+html,body,main{
+    //background-color: #87acbc;
+    margin: 0px;
+    height: 100%;
+    font-family: 'Roboto';
+    #header-contact{
 
-        input,textarea{
-            width: 90%;
-            margin: 10px 0px 10px 0px;
+        h1{
+            padding: 10px 0px 10px 0px;
+            text-align: center;
         }
+        .fa-arrow-left{
+            color:#035f81;
+            font-size: 25px;
+            padding: 10px;
+            position: fixed;
+        }
+    }
 
+    #formulaire{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        #contact-banner{
+            background-color: #035f817f;
+            height: 200px;
+            text-align: center;
+            font-size: 20px;
+        }
+        h2{
+            color: #035f81;
+            font-family: 'Roboto-Thin';
+            font-size: 30px;
+        }
+        h2{
+            text-align: center;
+        }
+        .formulaire{
+            width: 50%;
+            margin: 30px auto 0px auto;
+            background-color: #035f81;
+            border-radius: 20px;
+            padding: 20px;
+            color: white;
+
+            input,textarea{
+                width: 90%;
+                margin: 10px 0px 10px 0px;
+            }
+        }
     }
 }
