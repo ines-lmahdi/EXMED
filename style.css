@@ -10,6 +10,13 @@ html h1, body h1 {
   font-family: "Roboto-Thin";
   text-align: center;
 }
+html #sous-titre, body #sous-titre {
+  font-size: 22px;
+  color: #035f81;
+  font-family: "Roboto-thin";
+  text-align: center;
+  margin: 5px;
+}
 html nav, body nav {
   display: flex;
   flex-direction: row;
@@ -29,7 +36,7 @@ html nav #logo-exmes, body nav #logo-exmes {
   height: 75px;
 }
 html #banner, body #banner {
-  height: 450px;
+  height: 550px;
   width: 100%;
 }
 html #banner img, body #banner img {
@@ -56,6 +63,7 @@ html #parcours h2, body #parcours h2 {
 html #etapes, body #etapes {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
 }
 html #etapes h3, body #etapes h3 {

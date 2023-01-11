@@ -12,6 +12,13 @@ html,body{
         font-family: 'Roboto-Thin';
         text-align: center;
     }
+    #sous-titre{
+        font-size: 22px;
+        color: #035f81;
+        font-family: 'Roboto-thin';
+        text-align: center;
+        margin: 5px;
+    }
 
     nav{
         display: flex;
@@ -19,6 +26,7 @@ html,body{
         justify-content: space-between;
         align-items: center;
         padding: 0px 10px 0px 10px;
+
         .fa-envelope{
             color:#035f81;
             font-size: 25px;
@@ -33,7 +41,7 @@ html,body{
     }
 
     #banner{
-        height: 450px;
+        height: 550px;
         width: 100%;
 
         img{
@@ -67,6 +75,7 @@ html,body{
 
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         width: 100%;
 
         h3{
