@@ -1,0 +1,52 @@
+@media screen and (max-width:600px) {
+
+    #banner{
+        height: 300px !important;
+    }
+    #presentation, #parcours, #formulaire{
+        h2{
+            font-size: 25px !important;
+        }
+    }
+
+    #etapes{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        .etape{
+            //border: solid 2px #035f81;
+            box-shadow: 5px 5px 5px #035f8179;
+            width: 90% !important;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    .formulaire{
+        width: 80% !important;
+    }
+
+    #footer{
+       // position: fixed;
+        bottom: 0px;
+        width: 100%;
+        height: 7%;
+        font-size: 11px;
+
+        .mentions{
+            //display: flex;
+            //flex-direction: column-reverse;
+            text-align: center;
+
+            .middle{
+                padding: 0px 5px 0px 5px;
+                border-left: 1px solid white;
+                border-right: 1px solid white;
+            }
+
+            a{
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
