@@ -12,6 +12,8 @@
     #etapes{
         display: flex;
         flex-direction: column;
+        justify-content:center;
+        align-items: center;
         height: auto;
         .etape{
             //border: solid 2px #035f81;
@@ -48,5 +50,12 @@
                 padding-bottom: 5px;
             }
         }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+
+    .etape{
+        width: 50%;
     }
 }

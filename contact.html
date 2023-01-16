@@ -14,7 +14,8 @@
 <header id="header-contact">
     <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
     <h1> EXMES</h1>
-    <h2 id="sous-titre">EXpertises Médicales et Stratégiques</h2>
+    <h2 id="sous-titre"><span class="strong">EX</span>pertises <span class="strong">MÉ</span>dicales et <span class="strong">S</span>tratégiques <br>
+        La médecine d'aptitude ferrovière</h2>
 </header>
 <main>
     <div id="formulaire">
@@ -38,14 +39,35 @@
                 <input type="email" id="email" name="email">
             </div>
             <div>
+                <label for="phone"> Téléphone</label><br>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div>
                 <label for="entreprise"> Entreprise (facultatif)</label><br>
                 <input type="text" id="entreprise" name="entreprise">
+            </div>
+            <div class="box-option">
+                <legend>Prestation souhaité</legend>
+                <div class="check-box">
+                    <input type="checkbox" id="VMA" name="VMA" checked>
+                    <label for="VMA"> Visite médicale d'aptitude</label>
+                </div>
+                <div class="check-option">
+                    <input type="checkbox" id="VMPT" name="VMPT">
+                    <label for="VMPT"> Visite médicale & psycho-technique couplé</label>
+                </div>
+                <div class="check-option">
+                    <input type="checkbox" id="other" name="other">
+                    <label for="other">Autre</label>
+                </div>
             </div>
             <div>
                 <label for="msg"> Message</label><br>
                 <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
             </div>
-            <button type="submit" id="btn-send"> Envoyer</button>
+            <div class="btn-center">
+                <button type="submit" id="btn-send"> Envoyer</button>
+            </div>
         </form>
     </div>
 </main>

@@ -19,7 +19,13 @@ html,body{
             }
         }
     }
-
+    input{
+        width: 100%;
+    }
+    #form{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        align-items: center;
+        }
     #formulaire{
         display: flex;
         flex-direction: column;
@@ -47,7 +53,7 @@ html,body{
             text-align: center;
         }
         .formulaire{
-            width: 50%;
+            width: 70%;
             margin: 30px auto 0px auto;
             background-color: #035f81;
             border-radius: 20px;
@@ -57,6 +63,30 @@ html,body{
             input,textarea{
                 width: 90%;
                 margin: 10px 0px 10px 0px;
+            }
+            .box-option{
+                border: 1px solid white;
+                width: 90%;
+                padding: 5px;margin-bottom: 10px;
+            }
+            #VMA,#VMPT, #other{
+                width: 20%;
+            }
+            .btn-center{
+                text-align: center;
+            }
+            #btn-send{
+                width: 80px;
+                height: 25px;
+                border-radius: 5px;
+                background-color: white;
+                color: #035f81;
+                border: white;
+                &:hover{
+                    background-color: #035f81;
+                    color: white;
+                    border: solid 1px white;
+                }
             }
         }
     }

@@ -1,6 +1,7 @@
 @import 'index.scss';
 @import 'contact.scss';
 @import 'portable.scss';
+@import 'mentions-legales.scss';
 @import 'normalize.scss';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,100&display=swap');
 
@@ -14,4 +15,9 @@ html{
 @font-face {
     font-family: 'Roboto-Thin';
     src: url(/font/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url(/font/Roboto-Bold.ttf);
 }

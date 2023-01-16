@@ -11,11 +11,17 @@ html h1, body h1 {
   text-align: center;
 }
 html #sous-titre, body #sous-titre {
-  font-size: 22px;
-  color: #035f81;
+  font-size: 16px;
+  padding: 5px;
+  color: white;
   font-family: "Roboto-thin";
   text-align: center;
-  margin: 5px;
+  margin: 0px;
+  background-color: #035f81;
+}
+html #sous-titre .strong, body #sous-titre .strong {
+  font-family: "Roboto-Bold";
+  color: #72acbd;
 }
 html nav, body nav {
   display: flex;
@@ -36,12 +42,12 @@ html nav #logo-exmes, body nav #logo-exmes {
   height: 75px;
 }
 html #banner, body #banner {
-  height: 550px;
+  height: 100% !important;
   width: 100%;
 }
 html #banner img, body #banner img {
   object-fit: cover;
-  height: 100%;
+  height: 450px;
   width: 100%;
 }
 html #presentation h2, body #presentation h2 {
@@ -73,6 +79,11 @@ html #etapes .etape, body #etapes .etape {
   width: 30%;
   height: 100%;
   overflow: auto;
+  margin: 20px 0 20px 0px;
+  box-shadow: #035f81 0px 5px 15px;
+}
+html #etapes .etape h3, body #etapes .etape h3 {
+  text-align: center;
 }
 html #etapes .etape img, body #etapes .etape img {
   width: 100%;
@@ -82,6 +93,7 @@ html #etapes .etape img, body #etapes .etape img {
 html #etapes .etape p, body #etapes .etape p {
   text-align: justify;
   padding: 5px;
+  height: auto;
 }
 html #footer, body #footer {
   display: flex;
@@ -123,6 +135,13 @@ html #header-contact .fa-arrow-left, body #header-contact .fa-arrow-left {
 html #header-contact .fa-arrow-left:hover, body #header-contact .fa-arrow-left:hover {
   transform: scale(1.1);
 }
+html input, body input {
+  width: 100%;
+}
+html #form, body #form {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  align-items: center;
+}
 html #formulaire, body #formulaire {
   display: flex;
   flex-direction: column;
@@ -148,7 +167,7 @@ html #formulaire h2, body #formulaire h2 {
   text-align: center;
 }
 html #formulaire .formulaire, body #formulaire .formulaire {
-  width: 50%;
+  width: 70%;
   margin: 30px auto 0px auto;
   background-color: #035f81;
   border-radius: 20px;
@@ -158,6 +177,31 @@ html #formulaire .formulaire, body #formulaire .formulaire {
 html #formulaire .formulaire input, html #formulaire .formulaire textarea, body #formulaire .formulaire input, body #formulaire .formulaire textarea {
   width: 90%;
   margin: 10px 0px 10px 0px;
+}
+html #formulaire .formulaire .box-option, body #formulaire .formulaire .box-option {
+  border: 1px solid white;
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+html #formulaire .formulaire #VMA, html #formulaire .formulaire #VMPT, html #formulaire .formulaire #other, body #formulaire .formulaire #VMA, body #formulaire .formulaire #VMPT, body #formulaire .formulaire #other {
+  width: 20%;
+}
+html #formulaire .formulaire .btn-center, body #formulaire .formulaire .btn-center {
+  text-align: center;
+}
+html #formulaire .formulaire #btn-send, body #formulaire .formulaire #btn-send {
+  width: 80px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: white;
+  color: #035f81;
+  border: white;
+}
+html #formulaire .formulaire #btn-send:hover, body #formulaire .formulaire #btn-send:hover {
+  background-color: #035f81;
+  color: white;
+  border: solid 1px white;
 }
 
 @media screen and (max-width: 600px) {
@@ -170,6 +214,8 @@ html #formulaire .formulaire input, html #formulaire .formulaire textarea, body 
   #etapes {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: auto;
   }
   #etapes .etape {
@@ -199,6 +245,22 @@ html #formulaire .formulaire input, html #formulaire .formulaire textarea, body 
     padding-bottom: 5px;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .etape {
+    width: 50%;
+  }
+}
+.ML-error-message {
+  text-align: center;
+  padding: 200px 0px 200px 0px;
+}
+
+.fleche-retour {
+  padding: 10px 0px 0px 10px;
+  color: #076182;
+  font-size: 20px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -519,6 +581,10 @@ html {
 @font-face {
   font-family: "Roboto-Thin";
   src: url(/font/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(/font/Roboto-Bold.ttf);
 }
 
 /*# sourceMappingURL=style.css.map */
