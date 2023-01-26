@@ -23,7 +23,7 @@ html,body{
 
         .strong{
             font-family: 'Roboto-Bold';
-            color: #72acbd;
+            color: white;
         }
     }
 
@@ -93,8 +93,7 @@ html,body{
             height: 450px;
             overflow: auto;
             margin: 20px 0 20px 0px;
-            //border-radius: 20px 20px;
-            box-shadow: #035f81 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
             h3{
                 text-align: center;
@@ -114,6 +113,7 @@ html,body{
     }
 
     #footer{
+        font-family: 'Roboto-Thin';
         display: flex;
         flex-direction: column;
         background-color: #035f81;

@@ -11,74 +11,105 @@
     <meta name="description" content="Besoin de nous contacter pour une visite médicale conducteur de train, aptitude médicale">
     <title>EXMES Contact</title>
 </head>
-<header id="header-contact">
-    <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
-    <h1> EXMES</h1>
-    <h2 id="sous-titre"><span class="strong">EX</span>pertises <span class="strong">MÉ</span>dicales et <span class="strong">S</span>tratégiques <br>
-        La médecine d'aptitude ferrovière</h2>
-</header>
-<main>
-    <div id="formulaire">
-        <div id="contact-banner">
-            <p class="contact-banner-text">
-                <br> Nous sommes spécialisés en médecines d'aptitudes ferroviaires. </p>
+<body id="body">
+    <header id="header-contact">
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <h1> EXMES</h1>
+        <h2 id="sous-titre"><span class="strong">EX</span>pertises <span class="strong">MÉ</span>dicales et <span class="strong">S</span>tratégiques <br>
+            La médecine d'aptitude ferrovière</h2>
+    </header>
+    <main id="main">
+        <h3 class="title-devis"> Besoin d'un devis ?</h3>
+        <div id="demande-contact">
+            <div class="contact devis">
+                <h4> Visite médicale d'aptitude</h4>
+                <p> Merci d'indiquer dans votre message : <br>
+                <ul>
+                    <li> Nom & prénom</li>
+                    <li> Email</li>
+                    <li>Numéro de téléphone</li>
+                    <li>Entreprise (facultatif)</li>
+                </ul>
+                <button class="email-contact"><a  href="mailto:contact@exmes.fr"> Demande de contact<a></button>
+                </p>
+            </div>
+            <div class="contact couplé">
+                <h4>Visite médicale & psycho-technique couplé</h4>
+                <p> Merci d'indiquer dans votre message : <br>
+                <ul>
+                    <li> Nom & prénom</li>
+                    <li> Email</li>
+                    <li>Numéro de téléphone</li>
+                    <li>Entreprise (facultatif)</li>
+                </ul>
+                <button class="email-contact"><a  href="mailto:he.evaluations@gmail.com"> Demande de contact<a></button>
+            </div>
+            <!--
+            <div id="contact-banner">
+                <p class="contact-banner-text">
+                    <br> Nous sommes spécialisés en médecines d'aptitudes ferroviaires. </p>
+            </div>
+
+            <h2>Demande de devis</h2>
+            <form class="formulaire" action="mail.php
+            " method="post" id="form">
+                <div>
+                    <label for="last-name"> Prénom & nom:</label><br>
+                    <input type="text" id="lastName" name="LastName">
+                </div>
+                <div>
+                    <label for="first-name"> Prénom:</label><br>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                <div>
+                    <label for="mail">  E-mail&nbsp;:</label><br>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="phone"> Téléphone:</label><br>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <div>
+                    <label for="entreprise"> Entreprise (facultatif):</label><br>
+                    <input type="text" id="entreprise" name="entreprise">
+                </div>
+                <div class="box-option">
+                    <legend>Prestation souhaitée:</legend>
+                    <div class="check-box">
+                        <input type="checkbox" id="VMA" name="VMA" checked>
+                        <label for="VMA"> Visite médicale d'aptitude</label>
+                    </div>
+                    <div class="check-option">
+                        <input type="checkbox" id="VMPT" name="VMPT">
+                        <label for="VMPT"> Visite médicale & psycho-technique couplé</label>
+                    </div>
+                    <div class="check-option">
+                        <input type="checkbox" id="other" name="other">
+                        <label for="other">Autre</label>
+                    </div>
+                </div>
+                <div>
+                    <label for="msg"> Message:</label><br>
+                    <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
+                </div>
+                <div class="btn-center">
+                    <button type="submit" id="btn-send"> Envoyer</button>
+                </div>
+            </form>-->
+            </div>
         </div>
-        <h2>Demande de devis</h2>
-        <form class="formulaire" action="mail.php
-        " method="post" id="form">
-            <div>
-                <label for="last-name"> Nom:</label><br>
-                <input type="text" id="lastName" name="LastName">
-            </div>
-            <div>
-                <label for="first-name"> Prénom:</label><br>
-                <input type="text" id="firstName" name="firstName">
-            </div>
-            <div>
-                <label for="mail">  E-mail&nbsp;:</label><br>
-                <input type="email" id="email" name="email">
-            </div>
-            <div>
-                <label for="phone"> Téléphone:</label><br>
-                <input type="text" id="phone" name="phone">
-            </div>
-            <div>
-                <label for="entreprise"> Entreprise (facultatif):</label><br>
-                <input type="text" id="entreprise" name="entreprise">
-            </div>
-            <div class="box-option">
-                <legend>Prestation souhaitée:</legend>
-                <div class="check-box">
-                    <input type="checkbox" id="VMA" name="VMA" checked>
-                    <label for="VMA"> Visite médicale d'aptitude</label>
-                </div>
-                <div class="check-option">
-                    <input type="checkbox" id="VMPT" name="VMPT">
-                    <label for="VMPT"> Visite médicale & psycho-technique couplé</label>
-                </div>
-                <div class="check-option">
-                    <input type="checkbox" id="other" name="other">
-                    <label for="other">Autre</label>
-                </div>
-            </div>
-            <div>
-                <label for="msg"> Message:</label><br>
-                <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
-            </div>
-            <div class="btn-center">
-                <button type="submit" id="btn-send"> Envoyer</button>
-            </div>
-        </form>
-    </div>
-</main>
-<footer id="footer">
-    <div class="mentions">
-        <a href="statuts EXMES.pdf">Mentions légales</a>
-        <a href="contact.html">Demande de devis</a>
-        <a href="mailto:contact@exmes.com"> contact@exmes.com</a>
-    </div>
-    <div class="address">
-        <p>3 bis rue Taylor <br>
-            Paris 75010 <br>
-            Tel: 06.50.01.85.95</p>
-    </div>
+    </main>
+    <footer id="footer">
+        <div class="mentions">
+            <a href="mentions-legales.html">Mentions légales</a>
+            <a href="contact.html">Demande de devis</a>
+            <a href="mailto:contact@exmes.com"> contact@exmes.com</a>
+        </div>
+        <div class="address">
+            <p>3 bis rue Taylor <br>
+                Paris 75010 <br>
+                Tel: 06.50.01.85.95</p>
+        </div>
+    </footer>
+</body>
+</html>

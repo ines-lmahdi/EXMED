@@ -21,7 +21,7 @@ html #sous-titre, body #sous-titre {
 }
 html #sous-titre .strong, body #sous-titre .strong {
   font-family: "Roboto-Bold";
-  color: #72acbd;
+  color: white;
 }
 html nav, body nav {
   display: flex;
@@ -80,7 +80,7 @@ html #etapes .etape, body #etapes .etape {
   height: 450px;
   overflow: auto;
   margin: 20px 0 20px 0px;
-  box-shadow: #035f81 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 html #etapes .etape h3, body #etapes .etape h3 {
   text-align: center;
@@ -96,6 +96,7 @@ html #etapes .etape p, body #etapes .etape p {
   height: auto;
 }
 html #footer, body #footer {
+  font-family: "Roboto-Thin";
   display: flex;
   flex-direction: column;
   background-color: #035f81;
@@ -118,90 +119,151 @@ html #footer a:hover, body #footer a:hover {
   transform: scale(1.1);
 }
 
-html, body {
+html, #body, #main {
   margin: 0px;
   font-family: "Roboto";
-}
-html #header-contact h1, body #header-contact h1 {
-  padding: 10px 0px 10px 0px;
-  text-align: center;
-}
-html #header-contact .fa-arrow-left, body #header-contact .fa-arrow-left {
-  color: #035f81;
-  font-size: 25px;
-  padding: 10px;
-  position: fixed;
-}
-html #header-contact .fa-arrow-left:hover, body #header-contact .fa-arrow-left:hover {
-  transform: scale(1.1);
-}
-html input, body input {
   width: 100%;
+  height: 100%;
+  /*#header-contact{
+
+      h1{
+          padding: 10px 0px 10px 0px;
+          text-align: center;
+      }
+      .fa-arrow-left{
+          color:#035f81;
+          font-size: 25px;
+          padding: 10px;
+          position: fixed;
+          &:hover{
+              transform: scale(1.1);
+          }
+      }
+  }
+  input{
+      width: 100%;
+  }
+  #form{
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      align-items: center;
+      }
+  #formulaire{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 20px;
+
+
+      #contact-banner{
+          background-color: #035f817f;
+          height: 200px;
+          text-align: center;
+          font-size: 20px;
+          padding: 0 10% 0 10%;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      h2{
+          color: #035f81;
+          font-family: 'Roboto-Thin';
+          font-size: 30px;
+      }
+      h2{
+          text-align: center;
+      }
+      .formulaire{
+          width: 70%;
+          margin: 30px auto 0px auto;
+          background-color: #035f81;
+          border-radius: 20px;
+          padding: 20px;
+          color: white;
+
+          input,textarea{
+              width: 98%;
+              margin: 10px 0px 10px 0px;
+          }
+          .box-option{
+              border: 1px solid white;
+              width: 97%;
+              padding: 5px;margin-bottom: 10px;
+          }
+          #VMA,#VMPT, #other{
+              width: 20%;
+          }
+          .btn-center{
+              text-align: center;
+          }
+          #btn-send{
+              width: 80px;
+              height: 25px;
+              border-radius: 5px;
+              background-color: white;
+              color: #035f81;
+              border: white;
+              &:hover{
+                  background-color: #035f81;
+                  color: white;
+                  border: solid 1px white;
+              }
+          }
+      }
+  }*/
 }
-html #form, body #form {
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  align-items: center;
-}
-html #formulaire, body #formulaire {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-html #formulaire #contact-banner, body #formulaire #contact-banner {
-  background-color: rgba(3, 95, 129, 0.4980392157);
-  height: 200px;
-  text-align: center;
+html .fa-arrow-left, #body .fa-arrow-left, #main .fa-arrow-left {
+  color: #035f81;
   font-size: 20px;
-  padding: 0 10% 0 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-html #formulaire h2, body #formulaire h2 {
-  color: #035f81;
-  font-family: "Roboto-Thin";
-  font-size: 30px;
-}
-html #formulaire h2, body #formulaire h2 {
-  text-align: center;
-}
-html #formulaire .formulaire, body #formulaire .formulaire {
-  width: 70%;
-  margin: 30px auto 0px auto;
-  background-color: #035f81;
-  border-radius: 20px;
-  padding: 20px;
-  color: white;
-}
-html #formulaire .formulaire input, html #formulaire .formulaire textarea, body #formulaire .formulaire input, body #formulaire .formulaire textarea {
-  width: 98%;
-  margin: 10px 0px 10px 0px;
-}
-html #formulaire .formulaire .box-option, body #formulaire .formulaire .box-option {
-  border: 1px solid white;
-  width: 97%;
   padding: 5px;
-  margin-bottom: 10px;
 }
-html #formulaire .formulaire #VMA, html #formulaire .formulaire #VMPT, html #formulaire .formulaire #other, body #formulaire .formulaire #VMA, body #formulaire .formulaire #VMPT, body #formulaire .formulaire #other {
-  width: 20%;
-}
-html #formulaire .formulaire .btn-center, body #formulaire .formulaire .btn-center {
+html .title-devis, #body .title-devis, #main .title-devis {
   text-align: center;
+  font-size: 30px;
+  font-family: "Roboto-Thin";
 }
-html #formulaire .formulaire #btn-send, body #formulaire .formulaire #btn-send {
-  width: 80px;
-  height: 25px;
-  border-radius: 5px;
-  background-color: white;
+html #demande-contact, #body #demande-contact, #main #demande-contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+html .contact, #body .contact, #main .contact {
+  width: 380px;
+  height: 280px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #72acbd;
+  font-family: "Roboto";
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  font-family: "Roboto-Thin";
+}
+html .contact h4, #body .contact h4, #main .contact h4 {
+  text-align: center;
+  font-family: "Roboto-Thin";
+  font-size: 18px;
   color: #035f81;
-  border: white;
 }
-html #formulaire .formulaire #btn-send:hover, body #formulaire .formulaire #btn-send:hover {
+html .contact ul, #body .contact ul, #main .contact ul {
+  padding-bottom: 20px;
+}
+html .contact .email-contact, #body .contact .email-contact, #main .contact .email-contact {
   background-color: #035f81;
+  margin-left: 115px;
+  padding: 5px 7px 5px 7px;
+  border-radius: 20px;
+  border: #035f81 solid 1px;
+  text-align: center;
+  box-shadow: 5px 5px 5px;
+}
+html .contact .email-contact:hover, #body .contact .email-contact:hover, #main .contact .email-contact:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+html .contact .email-contact a, #body .contact .email-contact a, #main .contact .email-contact a {
+  text-decoration: none;
   color: white;
-  border: solid 1px white;
+  font-family: "Roboto-Thin";
 }
 
 @media screen and (max-width: 600px) {
@@ -223,9 +285,6 @@ html #formulaire .formulaire #btn-send:hover, body #formulaire .formulaire #btn-
     width: 90% !important;
     margin: auto;
     margin-bottom: 20px;
-  }
-  .formulaire {
-    width: 80% !important;
   }
   #footer {
     bottom: 0px;
@@ -249,6 +308,19 @@ html #formulaire .formulaire #btn-send:hover, body #formulaire .formulaire #btn-
 @media screen and (min-width: 600px) and (max-width: 800px) {
   .etape {
     width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  #demande-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #demande-contact .contact {
+    width: 300px;
+  }
+  #demande-contact .contact .email-contact {
+    margin-left: 70px;
   }
 }
 .ML-error-message {

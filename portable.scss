@@ -24,10 +24,6 @@
         }
     }
 
-    .formulaire{
-        width: 80% !important;
-    }
-
     #footer{
        // position: fixed;
         bottom: 0px;
@@ -59,4 +55,20 @@
     .etape{
         width: 50%;
     }
+}
+
+@media screen and (max-width:800px){
+    #demande-contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .contact{
+            width: 300px;
+            .email-contact{
+                margin-left: 70px;
+            }
+        }
+    }
+
 }
