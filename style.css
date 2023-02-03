@@ -76,6 +76,7 @@ html #etapes h3, body #etapes h3 {
   color: black;
 }
 html #etapes .etape, body #etapes .etape {
+  border-radius: 10px;
   width: 30%;
   height: 450px;
   overflow: auto;
@@ -254,7 +255,7 @@ html .contact .email-contact, #body .contact .email-contact, #main .contact .ema
   border-radius: 20px;
   border: #035f81 solid 1px;
   text-align: center;
-  box-shadow: 5px 5px 5px;
+  box-shadow: 5px 5px 5px rgba(3, 95, 129, 0.4117647059);
 }
 html .contact .email-contact:hover, #body .contact .email-contact:hover, #main .contact .email-contact:hover {
   transform: scale(1.1);
@@ -321,6 +322,9 @@ html .contact .email-contact a, #body .contact .email-contact a, #main .contact 
   }
   #demande-contact .contact .email-contact {
     margin-left: 70px;
+  }
+  #footer {
+    height: 100px !important;
   }
 }
 .ML-error-message {
