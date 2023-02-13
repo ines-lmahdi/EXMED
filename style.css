@@ -216,7 +216,7 @@ html, #body, #main {
 html .fa-arrow-left, #body .fa-arrow-left, #main .fa-arrow-left {
   color: #035f81;
   font-size: 20px;
-  padding: 5px;
+  padding: 10px;
 }
 html .title-devis, #body .title-devis, #main .title-devis {
   text-align: center;
@@ -225,14 +225,14 @@ html .title-devis, #body .title-devis, #main .title-devis {
 }
 html #demande-contact, #body #demande-contact, #main #demande-contact {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  height: 100%;
 }
 html .contact, #body .contact, #main .contact {
   width: 380px;
   height: 280px;
   padding: 10px;
+  margin: 5%;
   border-radius: 20px;
   border: 2px solid #72acbd;
   font-family: "Roboto";

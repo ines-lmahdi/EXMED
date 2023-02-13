@@ -7,7 +7,7 @@ html,#body,#main{
     .fa-arrow-left{
         color: #035f81;
         font-size: 20px;
-        padding: 5px;
+        padding: 10px;
     }
 
     .title-devis{
@@ -18,15 +18,14 @@ html,#body,#main{
 
     #demande-contact{
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
-        height: 100%;
     }
     .contact{
-        //background-color: #72acbd;
         width: 380px;
         height: 280px;
         padding: 10px;
+        margin: 5%;
         border-radius: 20px;
         border: 2px solid #72acbd;
         font-family: 'Roboto';
