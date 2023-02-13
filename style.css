@@ -2,6 +2,7 @@
 html, body {
   margin: 0px;
   font-family: "Roboto";
+  /* ANIMATION BOUTON */
 }
 html h1, body h1 {
   font-size: 40px;
@@ -22,6 +23,26 @@ html #sous-titre, body #sous-titre {
 html #sous-titre .strong, body #sous-titre .strong {
   font-family: "Roboto-Bold";
   color: white;
+}
+html .first-contact, body .first-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+html .first-contact .btn-first-contact, body .first-contact .btn-first-contact {
+  background-color: white;
+  border: white solid 1px;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0px 0px 20px 9px #035f81;
+  -webkit-box-shadow: 0px 0px 20px 9px #035f81;
+  -moz-box-shadow: 0px 0px 20px 9px #035f81;
+}
+html .first-contact .btn-first-contact a, body .first-contact .btn-first-contact a {
+  text-decoration: none;
+  color: #035f81;
+  font-family: "Roboto-thin";
+  font-weight: bold;
 }
 html nav, body nav {
   display: flex;
@@ -118,6 +139,38 @@ html #footer a, body #footer a {
 }
 html #footer a:hover, body #footer a:hover {
   transform: scale(1.1);
+}
+html .pulsate-fwd, body .pulsate-fwd {
+  -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
+  animation: pulsate-fwd 2s ease-in-out infinite both;
+}
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 html, #body, #main {
