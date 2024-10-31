@@ -19,50 +19,52 @@ html,#body,#main{
     #demande-contact{
         display: flex;
         justify-content: center;
-        align-items: center;
-    }
-    .contact{
-        width: 380px;
-        height: 280px;
-        padding: 10px;
-        margin: 5%;
-        border-radius: 20px;
-        border: 2px solid #72acbd;
-        font-family: 'Roboto';
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-        font-family: 'Roboto-Thin';
+        align-content: center;
+        //height: auto;
 
-        h4{
-            text-align: center;
-            font-family: 'Roboto-Thin';
-            font-size: 18px;
-            color: #035f81;
-        }
-        ul{
-            padding-bottom: 20px;
-        }
-
-        .email-contact{
-            background-color: #035f81;
-            margin-left: 115px;
-            padding: 5px 7px 5px 7px;
+        .contact{
+            width: 380px;
+            height: 280px;
+            padding: 10px;
             border-radius: 20px;
-            border: #035f81 solid 1px;
-            text-align: center;
-            box-shadow: 5px 5px 5px #035f8169;
+            margin: 5%;
+            //border: 2px solid #72acbd;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            font-family: 'Roboto';
 
-                &:hover{
-                    transform: scale(1.1);
-                    font-weight: bold;
+            h4{
+                text-align: center;
+                font-family: 'Roboto';
+                font-size: 18px;
+                color: #035f81;
+            }
+            ul{
+                padding-bottom: 20px;
+            }
+
+            .email-contact{
+                background-color: #035f81;
+                margin-left: 115px;
+                padding: 5px 7px 5px 7px;
+                border-radius: 20px;
+                border: #035f81 solid 1px;
+                text-align: center;
+                box-shadow: 5px 5px 5px #035f8169;
+
+                    &:hover{
+                        transform: scale(1.1);
+                        font-weight: bold;
+                    }
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    font-family: 'Roboto';
                 }
-
-            a{
-                text-decoration: none;
-                color: white;
-                font-family: 'Roboto-Thin';
             }
         }
     }
+
 
 
 

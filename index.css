@@ -1,0 +1,234 @@
+html, body {
+  margin: 0px;
+  font-family: 'Roboto';
+  /* ANIMATION BOUTON */
+}
+
+html h1, body h1 {
+  font-size: 40px;
+  margin: 0px;
+  color: #035f81;
+  font-family: 'Roboto';
+  text-align: center;
+}
+
+html #sous-titre, body #sous-titre {
+  font-size: 16px;
+  padding: 5px;
+  color: white;
+  font-family: 'Roboto';
+  text-align: center;
+  margin: 0px;
+  background-color: #035f81;
+}
+
+html #sous-titre .strong, body #sous-titre .strong {
+  font-family: 'Roboto-Bold';
+  color: white;
+}
+
+html nav, body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 10px 0px 10px;
+}
+
+html nav .fa-envelope, body nav .fa-envelope {
+  color: #035f81;
+  font-size: 25px;
+}
+
+html nav .fa-envelope:hover, body nav .fa-envelope:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+html nav #logo-exmes, body nav #logo-exmes {
+  width: 75px;
+  height: 75px;
+}
+
+html #banner, body #banner {
+  height: 100% !important;
+  width: 100%;
+}
+
+html #banner img, body #banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 450px;
+  width: 100%;
+}
+
+html #presentation h2, body #presentation h2 {
+  font-family: 'Roboto';
+  font-size: 35px;
+  color: #035f81;
+  text-align: center;
+}
+
+html #presentation #introduction, body #presentation #introduction {
+  padding: 4%;
+  text-align: justify;
+}
+
+html #parcours h2, body #parcours h2 {
+  color: #035f81;
+  font-size: 30px;
+  padding-left: 20px;
+  font-family: 'Roboto-Thin';
+}
+
+html #etapes, body #etapes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+html #etapes h3, body #etapes h3 {
+  color: black;
+}
+
+html #etapes .etape, body #etapes .etape {
+  border-radius: 10px;
+  width: 48%;
+  height: 450px;
+  overflow: auto;
+  margin: 20px 0 20px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+html #etapes .etape h3, body #etapes .etape h3 {
+  text-align: center;
+}
+
+html #etapes .etape img, body #etapes .etape img {
+  width: 100%;
+  height: 55%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+html #etapes .etape p, body #etapes .etape p {
+  text-align: justify;
+  padding: 5px;
+  height: auto;
+}
+
+html #footer, body #footer {
+  font-family: 'Roboto';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #035f81;
+  color: white;
+  padding: 7px;
+}
+
+html #footer .mentions, body #footer .mentions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html #footer .address, body #footer .address {
+  text-align: center;
+}
+
+html #footer a, body #footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+html #footer a:hover, body #footer a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+html .first-contact, body .first-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html .first-contact .btn-first-contact, body .first-contact .btn-first-contact {
+  background-color: #035f81e7;
+  -webkit-box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.714);
+          box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.714);
+  border: #035f81 solid 1px;
+  border-radius: 20px;
+  padding: 10px 15px 10px 15px;
+  border: transparent;
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+html .pulsate-fwd, body .pulsate-fwd {
+  -webkit-animation: pulsate-fwd 2s ease-in-out infinite both;
+  animation: pulsate-fwd 2s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/*# sourceMappingURL=index.css.map */
